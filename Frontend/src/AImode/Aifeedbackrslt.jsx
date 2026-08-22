@@ -16,7 +16,7 @@ function Aifeedbackrslt() {
       try {
         setLoading(true);
         const res = await fetch(
-          `http://https://iwproject.onrender.com/api/ai/feedback/${sessionid}`,
+          `https://iwproject.onrender.com/api/ai/feedback/${sessionid}`,
           {
             method: "GET",
             credentials: "include",

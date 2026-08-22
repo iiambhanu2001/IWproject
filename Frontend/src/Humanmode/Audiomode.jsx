@@ -14,7 +14,7 @@ function Audiomode() {
 
   async function startusersession() {
     const res = await fetch(
-      "http://https://iwproject.onrender.com/api/startinterview?ivmode=audio",
+      "https://iwproject.onrender.com/api/startinterview?ivmode=audio",
       {
         method: "GET",
         credentials: "include",

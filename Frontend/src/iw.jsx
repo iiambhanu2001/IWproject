@@ -170,7 +170,7 @@ function Iw() {
         </h2>
 
         <button
-          onClick={() => navigate("http://https://iwproject.onrender.com/auth/login")}
+          onClick={() => navigate("https://iwproject.onrender.com/auth/login")}
           className="mt-5 text-[#4E9B7A] hover:underline"
         >
           Get Started →

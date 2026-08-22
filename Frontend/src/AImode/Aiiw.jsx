@@ -32,7 +32,7 @@ function Aiiw() {
 
   async function aimodesendans() {
     const res = await fetch(
-      `http://https://iwproject.onrender.com/api/ai/iwanswer/${sessionid}`,
+      `https://iwproject.onrender.com/api/ai/iwanswer/${sessionid}`,
       {
         method: "POST",
         credentials: "include",
@@ -55,7 +55,7 @@ function Aiiw() {
   // start session
 
   async function questionfromai() {
-    const res = await fetch("http://https://iwproject.onrender.com/api/ai/iwquestion", {
+    const res = await fetch("https://iwproject.onrender.com/api/ai/iwquestion", {
       method: "GET",
       credentials: "include",
     });
@@ -68,7 +68,7 @@ function Aiiw() {
   async function submitfeedback() {
     try {
       const res = await fetch(
-        `http://https://iwproject.onrender.com/api/ai/feedback/${sessionid}`,
+        `https://iwproject.onrender.com/api/ai/feedback/${sessionid}`,
         {
           method: "POST",
           credentials: "include",

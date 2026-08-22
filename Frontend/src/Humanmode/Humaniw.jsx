@@ -21,7 +21,7 @@ function Humaniw() {
   const navigate = useNavigate();
 
   async function startusersession() {
-    const res = await fetch("http://https://iwproject.onrender.com/api/startinterview?ivmode=text", {
+    const res = await fetch("https://iwproject.onrender.com/api/startinterview?ivmode=text", {
       method: "GET",
       credentials: "include",
     });
@@ -83,7 +83,7 @@ function Humaniw() {
 
   async function sendanstoserver() {
     const res = await fetch(
-      `http://https://iwproject.onrender.com/api/startinterview/session/${sessionid}`,
+      `https://iwproject.onrender.com/api/startinterview/session/${sessionid}`,
       {
         method: "POST",
         headers: { "Content-type": "application/json" },

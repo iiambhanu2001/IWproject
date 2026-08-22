@@ -14,7 +14,7 @@ function Videomode() {
 
   async function startusersession() {
     const res = await fetch(
-      "http://https://iwproject.onrender.com/api/startinterview?ivmode=video",
+      "https://iwproject.onrender.com/api/startinterview?ivmode=video",
       {
         method: "GET",
         credentials: "include",
