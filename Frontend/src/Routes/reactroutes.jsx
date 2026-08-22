@@ -8,7 +8,7 @@ import Signup from "../Auth/Signup.jsx";
 import Login from "../Auth/Login.jsx";
 import Logout from "../Auth/Logout.jsx";
 
-import Protectedroutes from "./Protectedroutes.jsx";
+import Protectedroutes from "./protectedroutes.jsx";
 import { useAuth } from "../Context/Authcontext/Authcontext.jsx";
 import Candidate from "../Interviewer/Candidates.jsx";
 import InterviewPage from "../Interviewer/Interviewpage.jsx";
