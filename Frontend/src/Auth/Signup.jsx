@@ -28,7 +28,7 @@ function Signup() {
 
     setError("");
 
-    const res = await fetch("https://iwproject.onrender.com/auth/getstarted", {
+    const res = await fetch("https://iwproject1.onrender.com/auth/getstarted", {
       method: "POST",
       headers: {
         "content-type": "application/json",

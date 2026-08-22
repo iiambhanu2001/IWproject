@@ -1,3 +1,3 @@
 import { io } from "socket.io-client";
 
-export const socket=io("https://iwproject.onrender.com")
+export const socket=io("https://iwproject1.onrender.com")

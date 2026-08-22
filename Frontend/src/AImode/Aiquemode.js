@@ -1,6 +1,6 @@
 export default async function Aiquemode(sessionid) {
     
-    const res = await fetch(`https://iwproject.onrender.com/api/ai/iwquestion/${sessionid}`,{
+    const res = await fetch(`https://iwproject1.onrender.com/api/ai/iwquestion/${sessionid}`,{
         method:"GET",
         credentials:"include"
     })

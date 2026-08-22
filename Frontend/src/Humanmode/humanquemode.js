@@ -1,5 +1,5 @@
 export default async function Humanquemode(sessionid){
-    const res=await fetch(`https://iwproject.onrender.com/api/session/${sessionid}`,{
+    const res=await fetch(`https://iwproject1.onrender.com/api/session/${sessionid}`,{
         credentials:"include"
     })
     const data=await res.json();
@@ -9,7 +9,7 @@ export default async function Humanquemode(sessionid){
 
 
 // export default async function Humansendque(){
-//     const res=await fetch("https://iwproject.onrender.com/sendque")
+//     const res=await fetch("https://iwproject1.onrender.com/sendque")
 //     const data=await res.json();
 //     return data;
 // }
