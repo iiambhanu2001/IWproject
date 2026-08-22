@@ -12,6 +12,13 @@ const mongoose = require("mongoose");
 
 app.use(cookieParser());
 
+app.use(cors(
+ {
+  origin: "https://i-wproject.vercel.app/",
+    credentials: "true",
+ }
+))
+
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
