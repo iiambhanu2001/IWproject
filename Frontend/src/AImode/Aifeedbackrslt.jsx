@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 
 function Aifeedbackrslt() {
@@ -16,7 +16,7 @@ function Aifeedbackrslt() {
       try {
         setLoading(true);
         const res = await fetch(
-          `http://localhost:3000/api/ai/feedback/${sessionid}`,
+          `http://https://iwproject.onrender.com/api/ai/feedback/${sessionid}`,
           {
             method: "GET",
             credentials: "include",

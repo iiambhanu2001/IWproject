@@ -28,7 +28,7 @@ function Signup() {
 
     setError("");
 
-    const res = await fetch("http://localhost:3000/auth/getstarted", {
+    const res = await fetch("http://https://iwproject.onrender.com/auth/getstarted", {
       method: "POST",
       headers: {
         "content-type": "application/json",

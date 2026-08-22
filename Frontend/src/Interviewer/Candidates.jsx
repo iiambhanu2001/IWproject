@@ -9,7 +9,7 @@ function Candidate() {
   useEffect(() => {
     async function fetchinterviewee() {
       try {
-        const res = await fetch("http://localhost:3000/api/sessions", {
+        const res = await fetch("http://https://iwproject.onrender.com/api/sessions", {
           method: "GET",
           credentials: "include",
         });

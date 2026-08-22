@@ -55,7 +55,7 @@ function InterviewPage() {
   // SEND QUESTION (interviewer)
   async function sendquestion() {
     try {
-      await fetch(`http://localhost:3000/api/sendque/session/${sessionid}`, {
+      await fetch(`http://https://iwproject.onrender.com/api/sendque/session/${sessionid}`, {
         method: "POST",
         headers: {
           "content-type": "application/json",

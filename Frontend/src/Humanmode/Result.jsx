@@ -12,7 +12,7 @@ function Result() {
   useEffect(() => {
     const fetchResult = async () => {
       const res = await fetch(
-        `http://localhost:3000/api/interview/session/result/${sessionid}`,{
+        `http://https://iwproject.onrender.com/api/interview/session/result/${sessionid}`,{
           method:"GET",
           credentials:"include"
         }
