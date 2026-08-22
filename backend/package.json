@@ -1,0 +1,31 @@
+{
+  "name": "iwproject",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Bhanu Pratap",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "dependencies": {
+    "@google/genai": "^1.50.1",
+    "bcrypt": "^6.0.0",
+    "cookie-jwt": "^1.0.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongodb": "^7.2.0",
+    "mongoose": "^9.6.1",
+    "nanoid": "^5.1.9",
+    "node": "^24.15.0",
+    "socket.io": "^4.8.3",
+    "uuid": "^14.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
