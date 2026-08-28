@@ -12,13 +12,6 @@ const mongoose = require("mongoose");
 
 app.use(cookieParser());
 
-app.use(cors(
- {
-  origin: "https://i-wproject.vercel.app/",
-    credentials: true
- }
-))
-
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
@@ -36,9 +29,7 @@ io.on("connection", (socket) => {
 
     const room = io.sockets.adapter.rooms.get(sessionid);
 
-    console.log(
-      `Room ${sessionid}: ${room ? room.size : 0} participants`,
-    );
+    console.log(`Room ${sessionid}: ${room ? room.size : 0} participants`);
 
     if (room && room.size === 2) {
       io.to(sessionid).emit("both-connected");

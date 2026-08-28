@@ -1,12 +1,15 @@
-const express = require("express")
-const cors = require("cors")
+  const express = require("express")
+  const cors = require("cors")
 
-const app = express();
+  const app = express();
 
-app.use(cors({
-    origin: "http://localhost:5173", // NOT *
-    credentials: true,
-}))
-app.use(express.json())
+  app.use(cors(
+  {
+    origin: "https://i-wproject.vercel.app",
+      credentials: true
+  }
+  ))
 
-module.exports = app;
+  app.use(express.json())
+
+  module.exports = app;
