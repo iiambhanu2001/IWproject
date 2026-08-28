@@ -63,7 +63,7 @@ const login = async (req, res) => {
 
             res.cookie('token', token, {
                 httpOnly: true,
-                samesite: "none",
+                sameSite: "none",
                 secure: true
 
             })
