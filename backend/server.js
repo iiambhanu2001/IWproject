@@ -15,7 +15,7 @@ app.use(cookieParser());
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "https://i-wproject.vercel.app/",
+    origin: "https://i-wproject.vercel.app",
     credentials: true,
   },
 });
