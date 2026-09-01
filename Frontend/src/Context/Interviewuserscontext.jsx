@@ -9,7 +9,7 @@ export function Sessionprovider({ children }) {
   const [allsessionsData, setallsessionData] = useState({});
 
   const Humanquemode = async (sessionid) => {
-    const res = await fetch(`https://iwproject1.onrender.com/api/session/${sessionid}`, {
+    const res = await fetch(`/api/api/session/${sessionid}`, {
       method: "GET",
       credentials: "include",
     });
@@ -21,7 +21,7 @@ export function Sessionprovider({ children }) {
   const endsessionfeedback = async (payload, sessionid) => {
     try {
       const res = await fetch(
-        `https://iwproject1.onrender.com/api/interview/feedback/${sessionid}`,
+        `/api/api/interview/feedback/${sessionid}`,
         {
           method: "POST",
           credentials: "include",
@@ -40,7 +40,7 @@ export function Sessionprovider({ children }) {
   };
 
   const sessionbyuserIds = async () => {
-    const res = await fetch("https://iwproject1.onrender.com/api/sessionsdata", {
+    const res = await fetch("/api/api/sessionsdata", {
       method: "GET",
       credentials: "include",
     });
@@ -53,7 +53,7 @@ export function Sessionprovider({ children }) {
   };
 
   const checkinglastseen = async (sessionid) => {
-    const res = await fetch(`https://iwproject1.onrender.com/api/lastseenAt/${sessionid}`, {
+    const res = await fetch(`/api/api/lastseenAt/${sessionid}`, {
       method: "GET",
       credentials: "include",
     });

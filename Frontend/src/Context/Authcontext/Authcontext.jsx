@@ -9,7 +9,7 @@ export function Authprovider({ children }) {
   const [loading, setLoading] = useState(true);
   const storeUser = async () => {
     try {
-      const res = await fetch("https://iwproject1.onrender.com/auth/getuserinfo", {
+      const res = await fetch("/api/auth/getuserinfo", {
         method: "GET",
         credentials: "include",
       });
@@ -32,7 +32,7 @@ export function Authprovider({ children }) {
   }, []);
 
   const login = async (form) => {
-    const res = await fetch("https://iwproject1.onrender.com/auth/login", {
+    const res = await fetch("/api/auth/login", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
@@ -52,7 +52,7 @@ export function Authprovider({ children }) {
   };
 
   const logout = async () => {
-    const res = await fetch("https://iwproject1.onrender.com/auth/logout", {
+    const res = await fetch("/api/auth/logout", {
       method: "GET",
       credentials: "include",
     });
